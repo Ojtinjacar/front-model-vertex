@@ -1,0 +1,5 @@
+steps:
+- name: "gcr.io/cloud-builders/docker"
+  args: ['build','-t', 'gcr.io/ai-project-julian/image_to_front-model-vertex','.']
+- name: "gcr.io/cloud-builders/docker"
+  args: ['push','-t', 'gcr.io/ai-project-julian/image_to_front-model-vertex']
