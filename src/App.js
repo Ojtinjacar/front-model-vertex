@@ -64,7 +64,7 @@ function App() {
   const testImage = async () => {
     await axios
       .post(
-        `https://us-central1-ai-project-julian.cloudfunctions.net/image-prediction`,
+        `https://us-central1-ai-brain-tumor-recognition.cloudfunctions.net/image_prediction`,
         {
           base64: imageBase64
         },
